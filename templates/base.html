@@ -19,7 +19,7 @@
 {% else %}<li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Sign in</a></li><li class="nav-item"><a class="btn btn-primary rounded-pill px-4" href="{{ url_for('register') }}">Get Started</a></li>{% endif %}
 </ul></div></div></nav>
 <main>{% with messages=get_flashed_messages(with_categories=true) %}{% if messages %}<div class="container flash-wrap">{% for cat,msg in messages %}<div class="alert alert-{{cat}} alert-dismissible fade show shadow-sm">{{msg}}<button class="btn-close" data-bs-dismiss="alert"></button></div>{% endfor %}</div>{% endif %}{% endwith %}{% block content %}{% endblock %}</main>
-<footer class="footer"><div class="container py-4 d-flex justify-content-between flex-wrap gap-2"><span>© 2026 MediCare • Portfolio Demo</span><span>Built with Flask + Bootstrap</span></div></footer>
+<footer class="footer"><div class="container py-4 d-flex justify-content-between flex-wrap gap-2"><p class="mb-0">© 2026 MediCare. All rights reserved.</p></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 {% block scripts %}{% endblock %}
 </body></html>
